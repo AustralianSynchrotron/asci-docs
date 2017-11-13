@@ -3,22 +3,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ASCI User's Guide
-=================
+ASCI: Australian Synchrotron Compute Infrastructure
+===================================================
 
-Welcome to the guide to using the Australian Synchrotron's interactivate computing
-environment, ASCI. ASCI is designed to support you processing your data during and post
-experiment. To begin using ASCI, following the Getting Started link below.
+Welcome to the user's guide to the Australian Synchrotron's interactivate computing
+environment, ASCI.
+
+What is ASCI?
+-------------
+
+ASCI is a high-performance computing platform to allow researchers who have collected
+data at the Australian Synchrotron to process and visualise their data.
+
+To begin using ASCI, following the Getting Started link below.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    getting_started
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   support
