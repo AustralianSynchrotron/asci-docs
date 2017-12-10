@@ -19,7 +19,6 @@ To begin using ASCI, following the Getting Started link below.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    getting_started
    support
