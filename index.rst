@@ -21,5 +21,5 @@ To begin using ASCI, following the Getting Started link below.
    :maxdepth: 2
 
    getting_started
-   data
+   data/index
    support

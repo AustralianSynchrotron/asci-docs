@@ -1,6 +1,3 @@
-Managing your data
-==================
-
 Downloading
 -----------
 
@@ -21,19 +18,10 @@ You can download your data from the Australian Synchrotron SFTP service.
 
 For example, the Filezilla configuration would look like:
 
-.. image:: _static/filezilla.jpg
+.. image:: /_static/filezilla.jpg
 
 To download files or folders, simply drag them from the right pane to the left pane. You can
 see the progress of the transfer under "Queued files" at the bottom of the window.
 
 **Note:** Data produced on ASCI will only be available for download if it has been saved in the
 experiment folder.
-
-
-Uploading
----------
-
-We currently do not support direct uploads to ASCI. However, from within an ASCI session you
-can launch a browser and connect to file hosting services such as Dropbox or Google Drive.
-Filezilla is also installed inside the ASCI environments and can be used for downloading data
-from external file servers.
