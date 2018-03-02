@@ -3,4 +3,5 @@ Developing
 
 ::
 
-   make livehtml
+   pipenv install --dev
+   pipenv run make livehtml
