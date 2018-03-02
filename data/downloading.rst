@@ -82,3 +82,28 @@ The flags that are used here are:
 * ``-P`` : enable resuming partially downloaded files
 
 For more options available to rsync, run ``man rsync``.
+
+
+Using SSH keys to avoid typing password to rsync
+------------------------------------------------
+
+rsync allows you to download your data without being prompted for a password by using SSH.
+This is especially useful if you want to set up automated data syncing.
+
+To install keys, first generate them if you haven't already::
+
+   ssh-keygen
+
+
+Then copy the key with::
+
+   ssh-copy-id -i ~/.ssh/id_rsa <your_email_address>@sftp.synchrotron.org.au
+
+From then on you won't be prompted for a password when you run rsync.
+
+If you are on macOS you will need to install ``ssh-copy-id`` by:
+
+1. Installing `homebrew <https://brew.sh/>`_.
+2. Running::
+
+      brew install ssh-copy-id
