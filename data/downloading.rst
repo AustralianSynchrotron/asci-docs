@@ -1,5 +1,8 @@
 Downloading
------------
+###########
+
+SFTP Clients
+============
 
 You can download your data from the Australian Synchrotron SFTP service.
 
@@ -25,3 +28,57 @@ see the progress of the transfer under "Queued files" at the bottom of the windo
 
 **Note:** Data produced on ASCI will only be available for download if it has been saved in the
 experiment folder.
+
+
+rsync
+=====
+
+Rather than downloading your data with a graphical client you can use the command-line
+tool rsync. This has advantages including:
+
+* You can run rsync on a folder that is already partially downloaded and it will only copy new or
+  changed files
+* rsync can resume interrupted download
+* rsync downloading can be automated
+
+Installing rsync
+----------------
+
+macOS / Linux
+~~~~~~~~~~~~~
+
+rsync comes pre-installed with macOS and many Linux distributions (try typing "rsync" into
+your terminal). If it is not installed, you can get it with::
+
+   # Debian / Ubuntu:
+   sudo apt-get install rsync
+
+   # CentOS / Fedora:
+   sudo yum install rsync
+
+
+Windows
+~~~~~~~
+
+rsync can be installed with `Cygwin <https://www.cygwin.com/>`_.
+
+
+Using rsync
+-----------
+
+Run the following command in your terminal::
+
+   rsync -rtzP <your_email_address>@sftp.synchrotron.org.au:/data/<epn>/<path_to_folder> .
+
+For example::
+
+   rsync -rtzP alice@example.edu@sftp.synchrotron.org.au:/data/1234/frames/angles/scan1 .
+
+The flags that are used here are:
+
+* ``-r`` : copy folders are as well as files
+* ``-t`` : copy timestamps on files (makes re-syncing faster)
+* ``-z`` : compress files before transferring
+* ``-P`` : enable resuming partially downloaded files
+
+For more options available to rsync, run ``man rsync``.

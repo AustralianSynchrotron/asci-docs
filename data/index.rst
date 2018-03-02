@@ -4,7 +4,7 @@ Managing your data
 ==================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    downloading
    uploading

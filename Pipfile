@@ -11,6 +11,5 @@ name = "pypi"
 
 [dev-packages]
 
-sphinx = "*"
+Sphinx = "*"
 sphinx-autobuild = "*"
-sphinxcontrib-fulltoc = "*"
