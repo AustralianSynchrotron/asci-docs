@@ -4,7 +4,7 @@ Getting Started
 Gaining access to ASCI
 ----------------------
 
-If you have performed an experiment on the XFM or IMBL beamlines after June, 2017 you will
+If you have performed an experiment on ASCI-enabled beamlines (after June, 2017) you will
 automatically have access to ASCI. If you don't fall into this category please contact a
 Beamline Scientist to request access.
 
@@ -13,9 +13,9 @@ To log in to ASCI:
 1. Open https://asci.synchrotron.org.au/ with an up to date version of `Chrome
    <https://www.google.com/chrome/browser/desktop/>`_ or `Firefox
    <https://www.mozilla.org/en-US/firefox/new/>`_.
-2. Log in with your Australian Synchrotron Portal account.
+2. Log in with your Australian Synchrotron Hub account.
 
-If you have forgotten your password you can reset it at https://portal.synchrotron.org.au/.
+If you have forgotten your password you can reset it at https://userhub.synchrotron.org.au/register/reset_pw/.
 
 
 Launching a session
@@ -29,7 +29,7 @@ To launch a session simply click on an Environment according to the type of data
 
 **Online vs offline**
 
-If you are currently performing an experiment on the XFM or IMBL beamlines you will have
+If you are currently performing an experiment on the XFM, MCT or IMBL beamlines you will have
 access to an "Online" environment. This environment will run on a dedicated compute node so
 that you won't be competing for system resources with other users.
 
